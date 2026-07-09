@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kata Việt Nam - Danh Mục Sản Phẩm</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+        /* Cấu hình cứng độ phân giải theo yêu cầu 1920x1200 cho Slide */
+        .slide-container {
+            width: 100%;
+    min-height: 100vh; /* Tự động cao bằng toàn màn hình */
+    max-width: 1920px; /* Khống chế không cho quá to trên máy tính cực lớn */
+    margin: 0 auto;    /* Căn giữa slide trên máy tính */
+    overflow-x: hidden;
+        }
+        .product-card {
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+            background: rgba(59, 130, 246, 0.05);
+        }
+    </style>
+    </head>
+    <body class="bg-gray-900 block m-0 min-h-screen p-0">
+        <div class="flex flex-col justify-between mx-auto p-20 relative slide-container text-white">
+            <div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none generic-blueprint-bg"></div>
+            <header class="border-b border-blue-500/30 pb-8 flex justify-between items-end">
+                <div>
+                    <span class="text-blue-500 font-semibold tracking-widest text-xl uppercase block mb-2">Welcome to Industrial Solution</span>
+                    <h1 class="text-5xl font-black tracking-tight text-white uppercase">
+                    Công Ty TNHH Công Nghiệp <span class="text-blue-500">Kata Việt Nam</span> </h1>
+                </div>
+                <div class="text-right text-gray-400 text-lg">
+</div>
+            </header>
+            <main class="grid grid-cols-12 gap-16 my-auto items-center">
+                <section class="col-span-5 space-y-8">
+                    <div class="space-y-4">
+                        <h2 class="text-2xl font-bold text-blue-400 uppercase tracking-wider flex items-center"> <span class="w-8 h-1 bg-blue-500 inline-block mr-3"></span>Thông Tin Liên Hệ </h2>
+                        <p class="text-xl text-gray-300 leading-relaxed"> <strong class="text-white">Địa chỉ:</strong> 356 Ngô Gia Tự, P. Việt Hưng, TP. Hà Nội. </p>
+                    </div>
+                    <div class="grid grid-cols-1 gap-4 bg-slate-800/40 p-6 rounded-xl border border-slate-700">
+                        <div class="text-lg text-gray-300">
+                            <span class="font-semibold text-white block">Điện thoại / Hotline:</span>
+                            <span class="text-xl text-blue-400 font-mono">(024)36 750 587</span> 
+                            <span class="mx-2 text-gray-600">|</span> 
+                            <span class="text-xl text-yellow-400 font-mono">0974 926 726</span>
+                        </div>
+                        <div class="text-lg text-gray-300">
+                            <span class="font-semibold text-white block">Fax:</span>
+                            <span class="font-mono">(024)36 547 823</span>
+                        </div>
+                        <div class="text-lg text-gray-300">
+                            <span class="font-semibold text-white block">Email:</span>
+                            <a href="mailto:katavietnam@gmail.com" class="text-blue-400 hover:underline">katavietnam@gmail.com</a>
+                        </div>
+                        <div class="text-lg text-gray-300">
+                            <span class="font-semibold text-white block">Website:</span>
+                            <a href="http://katavn.com.vn" target="_blank" class="text-blue-400 hover:underline font-semibold text-xl tracking-wide">katavn.com.vn</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-span-7 space-y-6">
+                    <h2 class="text-2xl font-bold text-blue-400 uppercase tracking-wider flex items-center"> <span class="w-8 h-1 bg-blue-500 inline-block mr-3"></span>Sản Phẩm Phân Phối Chính </h2>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="product-card p-8 rounded-2xl flex flex-col justify-between h-48">
+                            <span class="text-blue-500 font-mono text-xl font-bold">01</span>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-1">LM Guide</h3>
+                                <p class="text-gray-400 text-lg">Hãng: <span class="text-gray-200 font-semibold">A+ Linear Technology</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card p-8 rounded-2xl flex flex-col justify-between h-48">
+                            <span class="text-blue-500 font-mono text-xl font-bold">02</span>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-1">Thiết Bị Khí Nén Công Nghiệp</h3>
+                                <p class="text-gray-400 text-lg">Hãng: <span class="text-gray-200 font-semibold">Airich Pneumatic</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card p-8 rounded-2xl flex flex-col justify-between h-48">
+                            <span class="text-blue-500 font-mono text-xl font-bold">03</span>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-1">Cảm Biến Công Nghiệp</h3>
+                                <p class="text-gray-400 text-lg">Hãng: <span class="text-gray-200 font-semibold">ifm electronic</span></p>
+                            </div>
+                        </div>
+                        <div class="product-card p-8 rounded-2xl flex flex-col justify-between h-48">
+                            <span class="text-blue-500 font-mono text-xl font-bold">04</span>
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-1">Trục Vít Me Bi</h3>
+                                <p class="text-gray-400 text-lg">Hãng: <span class="text-gray-200 font-semibold">Engder Precise Machinery</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="border-t border-slate-800 pt-6 flex justify-between text-sm text-gray-500">
+                <div>© 2026 Kata Vietnam Co., Ltd. All rights reserved.</div>
+                <div class="uppercase tracking-widest text-blue-500 font-semibold">Giải pháp toàn diện cho ngành cơ khí và tự động hóa</div>
+            </footer>
+        </div>
+        <!DOCTYPE html> 
+        <html lang="vi"> 
+            <head> 
+                <meta charset="UTF-8"> 
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+                <title>Kata Việt Nam - LM Guide A+ Linear Technology</title>                 
+                <script src="https://cdn.tailwindcss.com"></script>                 
+                <style>
+        /* Khóa cứng độ phân giải 1920x1200 theo yêu cầu */
+        .slide-container {
+            width: 1920px;
+            height: 1200px;
+            max-width: 1920px;
+            max-height: 1200px;
+            overflow: hidden;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0b1329 0%, #1c2541 100%);
+        }
+        .product-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            border-color: #3b82f6;
+            background: rgba(59, 130, 246, 0.04);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+    </style>                 
+            </head>             
+            <body class="bg-gray-900 block m-0 p-0"> 
+                <div class="slide-container flex flex-col justify-between p-20 text-white relative mx-auto"> 
+                    <header class="border-b border-slate-700 pb-6 flex justify-between items-end"> 
+                        <div> 
+                            <span class="text-blue-500 font-semibold tracking-widest text-xl uppercase block mb-2">Hệ Thống Dẫn Hướng Tuyến Tính</span> 
+                            <h1 class="text-5xl font-black tracking-tight text-white uppercase"> 
+                    LM Guide <span class="text-blue-400">A+ Linear Technology</span> </h1> 
+                        </div>                         
+                        <div class="text-right text-gray-400 text-lg"> 
+</div>                         
+                    </header>                     
+                    <main class="grid grid-cols-3 gap-10 my-auto items-stretch"> 
+                        <section class="product-card p-8 rounded-2xl flex flex-col justify-between"> 
+                            <div> 
+                                <div class="w-full h-56 bg-slate-800 rounded-xl overflow-hidden mb-6 border border-slate-700/50 relative group"> 
+                                    <img src="https://www.aplus-linear.com/archive/image/101enRWDproduct008/product-pic-01.png" alt="Standard Linear Guideway" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"> 
+                                    <span class="absolute top-4 left-4 bg-blue-500 text-white font-mono text-sm px-3 py-1 rounded-full font-bold">01</span> 
+                                </div>                                 
+                                <h2 class="text-2xl font-bold text-white mb-2 tracking-tight"> 
+                        Standard Linear Guideway </h2> 
+                                <p class="text-blue-400 font-semibold uppercase tracking-wider text-xs mb-4">Dòng Tiêu Chuẩn</p> 
+                                <ul class="space-y-3 text-gray-300 text-base border-t border-slate-800/60 pt-4"> 
+                                    <li class="flex items-start">
+                                        <span class="text-blue-500 mr-2">✔</span> Độ cứng vững cực cao, chịu tải trọng lớn đồng đều theo cả 4 hướng.
+                                    </li>                                     
+                                    <li class="flex items-start">
+                                        <span class="text-blue-500 mr-2">✔</span> Triệt tiêu ma sát, giúp cơ cấu chuyển động êm ái và chính xác ổn định.
+                                    </li>                                     
+                                </ul>                                 
+                            </div>                             
+                            <div class="pt-6 mt-6 border-t border-slate-800/60 flex items-center justify-between"> 
+                                <div class="text-xs text-gray-500 uppercase tracking-widest"> 
+                                    Ứng dụng: <span class="text-gray-300 block font-sans text-sm mt-1 normal-case font-medium">Máy CNC, phay, giường máy cắt laser</span> 
+                                </div>                                 
+                                <a href="https://www.aplus-linear.com/edcontent_d.php?lang=en&tb=3&id=78" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors flex items-center gap-1.5 shrink-0"> 
+                        Chi tiết <span class="text-xs">➔</span> </a> 
+                            </div>                             
+                        </section>                         
+                        <section class="product-card p-8 rounded-2xl flex flex-col justify-between border-blue-500/10 bg-slate-800/5"> 
+                            <div> 
+                                <div class="w-full h-56 bg-slate-800 rounded-xl overflow-hidden mb-6 border border-slate-700/50 relative group"> 
+                                    <img src="https://www.aplus-linear.com/archive/image/edcontent2/images/632edff08be07c12_thumb_450_362.png" alt="Support Surface Treatment" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"> 
+                                    <span class="absolute top-4 left-4 bg-emerald-500 text-white font-mono text-sm px-3 py-1 rounded-full font-bold">02</span> 
+                                </div>                                 
+                                <h2 class="text-2xl font-bold text-white mb-2 tracking-tight"> 
+                        Support Surface Treatment </h2> 
+                                <p class="text-emerald-400 font-semibold uppercase tracking-wider text-xs mb-4">Xử Lý Bề Mặt Đặc Biệt</p> 
+                                <ul class="space-y-3 text-gray-300 text-base border-t border-slate-800/60 pt-4"> 
+                                    <li class="flex items-start">
+                                        <span class="text-emerald-500 mr-2">✔</span> Tùy chọn phủ bề mặt (Mạ crom đen, niken florocarbon) chống rỉ sét tối đa.
+                                    </li>                                     
+                                    <li class="flex items-start">
+                                        <span class="text-emerald-500 mr-2">✔</span> Thích hợp vận hành bền bỉ trong môi trường khắc nghiệt, độ ẩm cao.
+                                    </li>                                     
+                                </ul>                                 
+                            </div>                             
+                            <div class="pt-6 mt-6 border-t border-slate-800/60 flex items-center justify-between"> 
+                                <div class="text-xs text-gray-500 uppercase tracking-widest"> 
+                                    Ứng dụng: <span class="text-gray-300 block font-sans text-sm mt-1 normal-case font-medium">Thiết bị y tế, thực phẩm, phòng sạch bán dẫn</span> 
+                                </div>                                 
+                                <a href="https://www.aplus-linear.com/edcontent_d.php?lang=en&tb=3&id=194" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors flex items-center gap-1.5 shrink-0"> 
+                        Chi tiết <span class="text-xs">➔</span> </a> 
+                            </div>                             
+                        </section>                         
+                        <section class="product-card p-8 rounded-2xl flex flex-col justify-between"> 
+                            <div> 
+                                <div class="w-full h-56 bg-slate-800 rounded-xl overflow-hidden mb-6 border border-slate-700/50 relative group"> 
+                                    <img src="https://www.aplus-linear.com/archive/image/101enRWDproduct008/product-pic-03.png" alt="Miniature Linear Guideway" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"> 
+                                    <span class="absolute top-4 left-4 bg-amber-500 text-white font-mono text-sm px-3 py-1 rounded-full font-bold">03</span> 
+                                </div>                                 
+                                <h2 class="text-2xl font-bold text-white mb-2 tracking-tight"> 
+                        Miniature Guideway M Series </h2> 
+                                <p class="text-amber-400 font-semibold uppercase tracking-wider text-xs mb-4">Dòng Ray Trượt Mini</p> 
+                                <ul class="space-y-3 text-gray-300 text-base border-t border-slate-800/60 pt-4"> 
+                                    <li class="flex items-start">
+                                        <span class="text-amber-500 mr-2">✔</span> Kích thước siêu nhỏ gọn, chế tác hoàn toàn từ thép không gỉ cao cấp.
+                                    </li>                                     
+                                    <li class="flex items-start">
+                                        <span class="text-amber-500 mr-2">✔</span> Thiết kế 2 hàng bi tiếp xúc góc 45°, chịu tải ổn định trong không gian hẹp.
+                                    </li>                                     
+                                </ul>                                 
+                            </div>                             
+                            <div class="pt-6 mt-6 border-t border-slate-800/60 flex items-center justify-between"> 
+                                <div class="text-xs text-gray-500 uppercase tracking-widest"> 
+                                    Ứng dụng: <span class="text-gray-300 block font-sans text-sm mt-1 normal-case font-medium">Cơ cấu kính hiển vi, cánh tay robot nhỏ, in 3D</span> 
+                                </div>                                 
+                                <a href="https://www.aplus-linear.com/edcontent_d.php?lang=en&tb=3&id=82" target="_blank" class="bg-amber-600 hover:bg-amber-500 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors flex items-center gap-1.5 shrink-0"> 
+                        Chi tiết <span class="text-xs">➔</span> </a> 
+                            </div>                             
+                        </section>                         
+                    </main>                     
+                    <footer class="border-t border-slate-800 pt-6 flex justify-between text-sm text-gray-500"> 
+                        <div>Nhà phân phối chính thức: <span class="text-gray-300 font-semibold">Công ty TNHH Công Nghiệp Kata Việt Nam</span>
+                        </div>                         
+                        <div class="font-mono text-gray-400">Website: katavn.com.vn | Hotline: 0974 926 726</div>                         
+                    </footer>                     
+                </div>                 
+            </body>             
+        </html>
+        <!DOCTYPE html> 
+        <html lang="vi"> 
+            <head> 
+                <meta charset="UTF-8"> 
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+                <title>Kata Việt Nam - LM Guide A+ Linear Technology</title>                 
+                <script src="https://cdn.tailwindcss.com"></script>                 
+                <style>
+        /* Khóa cứng độ phân giải 1920x1200 theo yêu cầu */
+        .slide-container {
+            width: 1920px;
+            height: 1200px;
+            max-width: 1920px;
+            max-height: 1200px;
+            overflow: hidden;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0b1329 0%, #1c2541 100%);
+        }
+        .product-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            border-color: #3b82f6;
+            background: rgba(59, 130, 246, 0.04);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+    </style>                 
+            </head>             
+            <body class="bg-gray-900 block m-0 p-0"> 
+</body>             
+        </html>
+        <!DOCTYPE html> 
+        <html lang="vi"> 
+            <head> 
+                <meta charset="UTF-8"> 
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+                <title>Kata Việt Nam - LM Guide A+ Linear Technology</title>                 
+                <script src="https://cdn.tailwindcss.com"></script>                 
+                <style>
+        /* Khóa cứng độ phân giải 1920x1200 theo yêu cầu */
+        .slide-container {
+            width: 1920px;
+            height: 1200px;
+            max-width: 1920px;
+            max-height: 1200px;
+            overflow: hidden;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0b1329 0%, #1c2541 100%);
+        }
+        .product-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            border-color: #3b82f6;
+            background: rgba(59, 130, 246, 0.04);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+    </style>                 
+            </head>             
+            <body class="bg-gray-900 block m-0 p-0"> 
+                <!DOCTYPE html> 
+                <html lang="vi"> 
+                    <head> 
+                        <meta charset="UTF-8"> 
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+                        <title>Kata Việt Nam - Airich Pneumatic</title>                         
+                        <script src="https://cdn.tailwindcss.com"></script>                         
+                        <style>
+        /* Khóa cứng độ phân giải 1920x1200 */
+        .slide-container {
+            width: 1920px;
+            height: 1200px;
+            max-width: 1920px;
+            max-height: 1200px;
+            overflow: hidden;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0b1329 0%, #1c2541 100%);
+        }
+        .product-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            border-color: #3b82f6;
+            background: rgba(59, 130, 246, 0.04);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+    </style>                         
+                    </head>                     
+                    <body class="bg-gray-900 block m-0 p-0"> 
+</body>                     
+                </html>
+                <!DOCTYPE html> 
+                <html lang="vi"> 
+                    <head> 
+                        <meta charset="UTF-8"> 
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+                        <title>Kata Việt Nam - Airich Pneumatic</title>                         
+                        <script src="https://cdn.tailwindcss.com"></script>                         
+                        <style>
+        /* Khóa cứng độ phân giải 1920x1200 */
+        .slide-container {
+            width: 1920px;
+            height: 1200px;
+            max-width: 1920px;
+            max-height: 1200px;
+            overflow: hidden;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0b1329 0%, #1c2541 100%);
+        }
+        .product-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            border-color: #3b82f6;
+            background: rgba(59, 130, 246, 0.04);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+    </style>                         
+                    </head>                     
+                    <body class="bg-gray-900 block m-0 p-0"> 
+</body>                     
+                </html>
+                <!DOCTYPE html> 
+                <html lang="vi"> 
+                    <head> 
+                        <meta charset="UTF-8"> 
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+                        <title>Kata Việt Nam - Airich Pneumatic</title>                         
+                        <script src="https://cdn.tailwindcss.com"></script>                         
+                        <style>
+        /* Khóa cứng độ phân giải 1920x1200 */
+        .slide-container {
+            width: 1920px;
+            height: 1200px;
+            max-width: 1920px;
+            max-height: 1200px;
+            overflow: hidden;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0b1329 0%, #1c2541 100%);
+        }
+        .product-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            border-color: #3b82f6;
+            background: rgba(59, 130, 246, 0.04);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+    </style>                         
+                    </head>                     
+                    <body class="bg-gray-900 block m-0 p-0"> 
+</body>                     
+                </html>
+                <!DOCTYPE html> 
+                <html lang="vi"> 
+                    <head> 
+                        <meta charset="UTF-8"> 
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+                        <title>Kata Việt Nam - Airich Pneumatic</title>                         
+                        <script src="https://cdn.tailwindcss.com"></script>                         
+                        <style>
+        /* Khóa cứng độ phân giải 1920x1200 */
+        .slide-container {
+            width: 1920px;
+            height: 1200px;
+            max-width: 1920px;
+            max-height: 1200px;
+            overflow: hidden;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0b1329 0%, #1c2541 100%);
+        }
+        .product-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            border-color: #3b82f6;
+            background: rgba(59, 130, 246, 0.04);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+    </style>                         
+                    </head>                     
+                    <body class="bg-gray-900 block m-0 p-0"> 
+                        <div class="slide-container flex flex-col justify-between p-20 text-white relative mx-auto"> 
+                            <header class="border-b border-slate-700 pb-6 flex justify-between items-end"> 
+                                <div> 
+                                    <span class="text-blue-500 font-semibold tracking-widest text-xl uppercase block mb-2">Hệ Thống Thiết Bị Khí Nén Công Nghiệp</span> 
+                                    <h1 class="text-5xl font-black tracking-tight text-white uppercase"> 
+                    Airich <span class="text-blue-400">Pneumatic</span> </h1> 
+                                </div>                                 
+                                <div class="text-right text-gray-400 text-lg"> 
+</div>                                 
+                            </header>                             
+                            <main class="grid grid-cols-3 gap-10 my-auto items-stretch"> 
+                                <section class="product-card p-8 rounded-2xl flex flex-col justify-between"> 
+                                    <div> 
+                                        <div class="w-full h-56 bg-slate-800 rounded-xl overflow-hidden mb-6 border border-slate-700/50 relative group"> 
+                                            <img src="https://www.hyqd.cn/english/theme/default/images/banner_3.jpg" alt="Airich Cylinder" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"> 
+                                            <span class="absolute top-4 left-4 bg-blue-500 text-white font-mono text-sm px-3 py-1 rounded-full font-bold">01</span> 
+                                        </div>                                         
+                                        <h2 class="text-2xl font-bold text-white mb-2 tracking-tight"> 
+                        Cylinder </h2> 
+                                        <p class="text-blue-400 font-semibold uppercase tracking-wider text-xs mb-4">Xy Lanh Khí Nén</p> 
+                                        <ul class="space-y-3 text-gray-300 text-base border-t border-slate-800/60 pt-4"> 
+                                            <li class="flex items-start">
+                                                <span class="text-blue-500 mr-2">✔</span> Đa dạng chủng loại: Xy lanh tròn, xy lanh vuông, xy lanh nhỏ gọn (compact), và đầu kẹp khí nén.
+                                            </li>                                             
+                                            <li class="flex items-start">
+                                                <span class="text-blue-500 mr-2">✔</span> Vật liệu hợp kim nhôm cao cấp, chịu áp lực tốt, hoạt động bền bỉ với tần suất cao.
+                                            </li>                                             
+                                        </ul>                                         
+                                    </div>                                     
+                                    <div class="pt-6 mt-6 border-t border-slate-800/60 flex items-center justify-between"> 
+                                        <div class="text-xs text-gray-500 uppercase tracking-widest"> 
+                                            Dòng máy: <span class="text-gray-300 block font-sans text-sm mt-1 normal-case font-medium">Hệ thống đẩy, kẹp, cấp phôi tự động</span> 
+                                        </div>                                         
+                                        <a href="http://katavn.com.vn/category/xi-lanh-khi-nen.htm" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors flex items-center gap-1.5 shrink-0"> 
+                        Chi tiết <span class="text-xs">➔</span> </a> 
+                                    </div>                                     
+                                </section>                                 
+                                <section class="product-card p-8 rounded-2xl flex flex-col justify-between border-blue-500/10 bg-slate-800/5"> 
+                                    <div> 
+                                        <div class="w-full h-56 bg-slate-800 rounded-xl overflow-hidden mb-6 border border-slate-700/50 relative group"> 
+                                            <img src="https://www.hyqd.cn/english/theme/default/images/banner_1.jpg" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"> 
+                                            <span class="absolute top-4 left-4 bg-emerald-500 text-white font-mono text-sm px-3 py-1 rounded-full font-bold">02</span> 
+                                        </div>                                         
+                                        <h2 class="text-2xl font-bold text-white mb-2 tracking-tight"> 
+                        Valve </h2> 
+                                        <p class="text-emerald-400 font-semibold uppercase tracking-wider text-xs mb-4">Van Điều Khiển Khí Nén</p> 
+                                        <ul class="space-y-3 text-gray-300 text-base border-t border-slate-800/60 pt-4"> 
+                                            <li class="flex items-start">
+                                                <span class="text-emerald-500 mr-2">✔</span> Bao gồm van điện từ (solenoid valve), van khí điều khiển, van cơ và van một chiều.
+                                            </li>                                             
+                                            <li class="flex items-start">
+                                                <span class="text-emerald-500 mr-2">✔</span> Thời gian phản hồi cực nhanh, đóng ngắt chính xác, tiết kiệm điện năng vận hành.
+                                            </li>                                             
+                                        </ul>                                         
+                                    </div>                                     
+                                    <div class="pt-6 mt-6 border-t border-slate-800/60 flex items-center justify-between"> 
+                                        <div class="text-xs text-gray-500 uppercase tracking-widest"> 
+                                            Chức năng: <span class="text-gray-300 block font-sans text-sm mt-1 normal-case font-medium">Điều hướng dòng khí, đảo chiều xy lanh</span> 
+                                        </div>                                         
+                                        <a href="http://katavn.com.vn/category/van-dien-tu-Airich.htm" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors flex items-center gap-1.5 shrink-0"> 
+                        Chi tiết <span class="text-xs">➔</span> </a> 
+                                    </div>                                     
+                                </section>                                 
+                                <section class="product-card p-8 rounded-2xl flex flex-col justify-between"> 
+                                    <div> 
+                                        <div class="w-full h-56 bg-slate-800 rounded-xl overflow-hidden mb-6 border border-slate-700/50 relative group"> 
+                                            <img src="https://www.hyqd.cn/english/theme/default/images/banner_4.jpg" alt="Airich Connector and Tube" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"> 
+                                            <span class="absolute top-4 left-4 bg-amber-500 text-white font-mono text-sm px-3 py-1 rounded-full font-bold">03</span> 
+                                        </div>                                         
+                                        <h2 class="text-2xl font-bold text-white mb-2 tracking-tight"> 
+                        Connector &amp; Tube </h2> 
+                                        <p class="text-amber-400 font-semibold uppercase tracking-wider text-xs mb-4">Đầu Nối &amp; Dây Dẫn Khí</p> 
+                                        <ul class="space-y-3 text-gray-300 text-base border-t border-slate-800/60 pt-4"> 
+                                            <li class="flex items-start">
+                                                <span class="text-amber-500 mr-2">✔</span> Đầu nối nhanh (one-touch fittings) thông minh, chống rò rỉ khí tuyệt đối, dễ dàng lắp đặt.
+                                            </li>                                             
+                                            <li class="flex items-start">
+                                                <span class="text-amber-500 mr-2">✔</span> Dây hơi PU, PE chịu áp lực cao, có độ dẻo dai tốt và bán kính uốn cong tối ưu.
+                                            </li>                                             
+                                        </ul>                                         
+                                    </div>                                     
+                                    <div class="pt-6 mt-6 border-t border-slate-800/60 flex items-center justify-between"> 
+                                        <div class="text-xs text-gray-500 uppercase tracking-widest"> 
+                                            Vật tư phụ: <span class="text-gray-300 block font-sans text-sm mt-1 normal-case font-medium">Kết nối linh hoạt cho mọi hệ thống khí nén</span> 
+                                        </div>                                         
+                                        <a href="http://katavn.com.vn/category/Pneumatic-Fittings.htm" target="_blank" class="bg-amber-600 hover:bg-amber-500 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors flex items-center gap-1.5 shrink-0"> 
+                        Chi tiết <span class="text-xs">➔</span> </a> 
+                                    </div>                                     
+                                </section>                                 
+                            </main>                             
+                            <footer class="border-t border-slate-800 pt-6 flex justify-between text-sm text-gray-500"> 
+                                <div>Nhà phân phối chính thức: <span class="text-gray-300 font-semibold">Công ty TNHH Công Nghiệp Kata Việt Nam</span>
+                                </div>                                 
+                                <div class="font-mono text-gray-400">Website: katavn.com.vn | Hotline: 0974 926 726</div>                                 
+                            </footer>                             
+                        </div>
+                        <!DOCTYPE html> 
+                        <html lang="vi"> 
+                            <head> 
+                                <meta charset="UTF-8"> 
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+                                <title>Kata Việt Nam - ifm electronic Sensors</title>                                 
+                                <script src="https://cdn.tailwindcss.com"></script>                                 
+                                <style>
+        /* Khóa cứng độ phân giải 1920x1200 */
+        .slide-container {
+            width: 1920px;
+            height: 1200px;
+            max-width: 1920px;
+            max-height: 1200px;
+            overflow: hidden;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0b1329 0%, #1c2541 100%);
+        }
+        .product-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+            background: rgba(59, 130, 246, 0.04);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+    </style>                                 
+                            </head>                             
+                            <body class="bg-gray-900 block m-0 p-0"> 
+                                <div class="slide-container flex flex-col justify-between p-20 text-white relative mx-auto"> 
+                                    <header class="border-b border-slate-700 pb-6 flex justify-between items-end"> 
+                                        <div> 
+                                            <span class="text-blue-500 font-semibold tracking-widest text-xl uppercase block mb-2">Giải Pháp Cảm Biến &amp; Tự Động Hóa Công Nghiệp</span> 
+                                            <h1 class="text-5xl font-black tracking-tight text-white uppercase"> 
+                    Cảm Biến Hãng <span class="text-blue-400">ifm electronic</span> </h1> 
+                                        </div>                                         
+                                        <div class="text-right text-gray-400 text-lg"> 
+</div>                                         
+                                    </header>                                     
+                                    <main class="grid grid-cols-3 grid-rows-2 gap-6 my-auto items-stretch"> 
+                                        <section class="product-card p-6 rounded-xl flex items-center gap-5"> 
+                                            <div class="w-32 h-32 bg-slate-800 rounded-lg overflow-hidden shrink-0 border border-slate-700/50"> 
+                                                <img src="https://thanhcongtech.vn/wp-content/uploads/2021/08/cam-bien-tiem-can.jpg" alt="Proximity sensors" class="w-full h-full object-cover opacity-80"> 
+                                            </div>                                             
+                                            <div class="flex flex-col justify-between h-full w-full"> 
+                                                <div> 
+                                                    <h2 class="text-xl font-bold text-white mb-1">Cảm biến tiệm cận</h2> 
+                                                    <p class="text-xs text-blue-400 uppercase tracking-wider font-semibold mb-2">Proximity sensors</p> 
+                                                    <p class="text-gray-400 text-sm line-clamp-2">Phát hiện vật thể kim loại không cần tiếp xúc, độ chính xác cao, tuổi thọ vượt trội.</p> 
+                                                </div>                                                 
+                                                <div class="flex justify-end mt-2"> 
+                                                    <a href="https://www.ifm.com/vn/en/category/200_010_010" target="_blank" class="text-blue-400 hover:text-blue-300 text-xs font-semibold flex items-center gap-1">Chi tiết ➔</a> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </section>                                         
+                                        <section class="product-card p-6 rounded-xl flex items-center gap-5 border-blue-500/10 bg-slate-800/5"> 
+                                            <div class="w-32 h-32 bg-slate-800 rounded-lg overflow-hidden shrink-0 border border-slate-700/50"> 
+                                                <img src="https://www.ifm.com/responsive/medium/content/gallery/productgroups/P_F_WH_W_500_0061.JPG?v=530842192" alt="Pressure sensors" class="w-full h-full object-cover opacity-80"> 
+                                            </div>                                             
+                                            <div class="flex flex-col justify-between h-full w-full"> 
+                                                <div> 
+                                                    <h2 class="text-xl font-bold text-white mb-1">Cảm biến áp suất</h2> 
+                                                    <p class="text-xs text-emerald-400 uppercase tracking-wider font-semibold mb-2">Pressure sensors</p> 
+                                                    <p class="text-gray-400 text-sm line-clamp-2">Sử dụng gốm bền bỉ, màng đo chuẩn vệ sinh an toàn thực phẩm, chống rò rỉ hiệu quả.</p> 
+                                                </div>                                                 
+                                                <div class="flex justify-end mt-2"> 
+                                                    <a href="https://www.ifm.com/vn/en/category/200_020_010" target="_blank" class="text-emerald-400 hover:text-emerald-300 text-xs font-semibold flex items-center gap-1">Chi tiết ➔</a> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </section>                                         
+                                        <section class="product-card p-6 rounded-xl flex items-center gap-5"> 
+                                            <div class="w-32 h-32 bg-slate-800 rounded-lg overflow-hidden shrink-0 border border-slate-700/50"> 
+                                                <img src="https://www.ifm.com/responsive/xlarge/fourbythree/content/gallery/productgroups/ifm-process-sensors-flow-sensors-meters.jpg?v=2089836058" alt="Flow sensors" class="w-full h-full object-cover opacity-80"> 
+                                            </div>                                             
+                                            <div class="flex flex-col justify-between h-full w-full"> 
+                                                <div> 
+                                                    <h2 class="text-xl font-bold text-white mb-1">Cảm biến lưu lượng</h2> 
+                                                    <p class="text-xs text-amber-400 uppercase tracking-wider font-semibold mb-2">Flow sensors</p> 
+                                                    <p class="text-gray-400 text-sm line-clamp-2">Đo lưu lượng chất lỏng, khí trong đường ống (Dòng SM Foodmag chuyên cho F&amp;B).</p> 
+                                                </div>                                                 
+                                                <div class="flex justify-end mt-2"> 
+                                                    <a href="ifm.com/vn/en/category/200_020_030" target="_blank" class="text-amber-400 hover:text-amber-300 text-xs font-semibold flex items-center gap-1">Chi tiết ➔</a> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </section>                                         
+                                        <section class="product-card p-6 rounded-xl flex items-center gap-5"> 
+                                            <div class="w-32 h-32 bg-slate-800 rounded-lg overflow-hidden shrink-0 border border-slate-700/50"> 
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLx8ZQEC1YE8RaP5E_whb8Rku-21BySHWpqr5ob6HuykaYt-_qqGXriFer&s=10" alt="Temperature sensors" class="w-full h-full object-cover opacity-80"> 
+                                            </div>                                             
+                                            <div class="flex flex-col justify-between h-full w-full"> 
+                                                <div> 
+                                                    <h2 class="text-xl font-bold text-white mb-1">Cảm biến nhiệt độ</h2> 
+                                                    <p class="text-xs text-purple-400 uppercase tracking-wider font-semibold mb-2">Temperature sensors</p> 
+                                                    <p class="text-gray-400 text-sm line-clamp-2">Giám sát nhiệt độ chính xác, phản ứng nhanh trong các hệ thống phức tạp.</p> 
+                                                </div>                                                 
+                                                <div class="flex justify-end mt-2"> 
+                                                    <a href="ifm.com/vn/en/category/200_020_040" target="_blank" class="text-purple-400 hover:text-purple-300 text-xs font-semibold flex items-center gap-1">Chi tiết ➔</a> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </section>                                         
+                                        <section class="product-card p-6 rounded-xl flex items-center gap-5"> 
+                                            <div class="w-32 h-32 bg-slate-800 rounded-lg overflow-hidden shrink-0 border border-slate-700/50"> 
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjtpQ6gOFXNB2Qj2jNtxpkRf_iv9BoeUrtu4nXnVQRPaBvL-aXhQVUnjw&s=10" alt="Photoelectric sensors" class="w-full h-full object-cover opacity-80"> 
+                                            </div>                                             
+                                            <div class="flex flex-col justify-between h-full w-full"> 
+                                                <div> 
+                                                    <h2 class="text-xl font-bold text-white mb-1">Cảm biến quang</h2> 
+                                                    <p class="text-xs text-pink-400 uppercase tracking-wider font-semibold mb-2">Photoelectric sensors</p> 
+                                                    <p class="text-gray-400 text-sm line-clamp-2">Dùng ánh sáng để phát hiện vật thể, đếm sản phẩm, đo khoảng cách, màu sắc.</p> 
+                                                </div>                                                 
+                                                <div class="flex justify-end mt-2"> 
+                                                    <a href="ifm.com/vn/en/category/200_010_020" target="_blank" class="text-pink-400 hover:text-pink-300 text-xs font-semibold flex items-center gap-1">Chi tiết ➔</a> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </section>                                         
+                                        <section class="product-card p-6 rounded-xl flex items-center gap-5"> 
+                                            <div class="w-32 h-32 bg-slate-800 rounded-lg overflow-hidden shrink-0 border border-slate-700/50"> 
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1a6siJ3D4OZUeywAxLbW8bSkRbz3j-DAyajfcqRcqWw&s" alt="Capacitive sensors" class="w-full h-full object-cover opacity-80"> 
+                                            </div>                                             
+                                            <div class="flex flex-col justify-between h-full w-full"> 
+                                                <div> 
+                                                    <h2 class="text-xl font-bold text-white mb-1">Cảm biến điện dung</h2> 
+                                                    <p class="text-xs text-teal-400 uppercase tracking-wider font-semibold mb-2">Capacitive sensors</p> 
+                                                    <p class="text-gray-400 text-sm line-clamp-2">Phát hiện mức chất lỏng, chất rắn hoặc đo lường mức liên tục trong bồn chứa.</p> 
+                                                </div>                                                 
+                                                <div class="flex justify-end mt-2"> 
+                                                    <a href="https://www.ifm.com/vn/en/category/200_010_030#/" target="_blank" class="text-teal-400 hover:text-teal-300 text-xs font-semibold flex items-center gap-1">Chi tiết ➔</a> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </section>                                         
+                                    </main>                                     
+                                    <footer class="border-t border-slate-800 pt-6 flex justify-between text-sm text-gray-500"> 
+                                        <div>Nhà phân phối chính thức: <span class="text-gray-300 font-semibold">Công ty TNHH Công Nghiệp Kata Việt Nam</span>
+                                        </div>                                         
+                                        <div class="font-mono text-gray-400">Website: katavn.com.vn | Hotline: 0974 926 726</div>                                         
+                                    </footer>                                     
+                                </div>
+                                <!DOCTYPE html> 
+                                <html lang="vi"> 
+                                    <head> 
+                                        <meta charset="UTF-8"> 
+                                        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+                                        <title>Kata Việt Nam - Engder Precise Machinery</title>                                         
+                                        <script src="https://cdn.tailwindcss.com"></script>                                         
+                                        <style>
+        /* Khóa cứng độ phân giải 1920x1200 */
+        .slide-container {
+            width: 1920px;
+            height: 1200px;
+            max-width: 1920px;
+            max-height: 1200px;
+            overflow: hidden;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0b1329 0%, #1c2541 100%);
+        }
+        .product-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            border-color: #3b82f6;
+            background: rgba(59, 130, 246, 0.04);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+    </style>                                         
+                                    </head>                                     
+                                    <body class="bg-gray-900 block m-0 p-0"> 
+                                        <div class="slide-container flex flex-col justify-between p-20 text-white relative mx-auto"> 
+                                            <header class="border-b border-slate-700 pb-6 flex justify-between items-end"> 
+                                                <div> 
+                                                    <span class="text-blue-500 font-semibold tracking-widest text-xl uppercase block mb-2">Hệ Thống Truyền Động Tịnh Tiến Chính Xác Cao</span> 
+                                                    <h1 class="text-5xl font-black tracking-tight text-white uppercase"> 
+                    Trục Vít Me Hãng <span class="text-blue-400">Engder Precise Machinery</span> </h1> 
+                                                </div>                                                 
+                                                <div class="text-right text-gray-400 text-lg"> 
+                                                    <p>Mã slide: <span class="text-white font-mono">05/ENGDER-SCREW</span></p> 
+                                                </div>                                                 
+                                            </header>                                             
+                                            <main class="grid grid-cols-2 gap-12 my-auto items-stretch"> 
+                                                <section class="product-card p-10 rounded-2xl flex flex-col justify-between"> 
+                                                    <div> 
+                                                        <div class="w-full h-72 bg-slate-800 rounded-xl overflow-hidden mb-8 border border-slate-700/50 relative group"> 
+                                                            <img src="https://www.engder.com/images/products/products-03-2-1.jpg" alt="External Circulation Ballscrew" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"> 
+                                                            <span class="absolute top-6 left-6 bg-blue-500 text-white font-mono text-base px-4 py-1.5 rounded-full font-bold">01</span> 
+                                                        </div>                                                         
+                                                        <h2 class="text-3xl font-bold text-white mb-3 tracking-tight"> 
+                        Vít Me Bi Tuần Hoàn Ngoài </h2> 
+                                                        <p class="text-blue-400 font-semibold uppercase tracking-wider text-sm mb-6">External Circulation Ballscrew</p> 
+                                                        <ul class="space-y-4 text-gray-300 text-lg border-t border-slate-800/60 pt-6"> 
+                                                            <li class="flex items-start"> 
+                                                                <span class="text-blue-500 mr-3 text-xl">✔</span> Đường hồi bi nằm ngoài đai ốc (sử dụng ống hồi bi uốn cong lồi lên), giúp chế tạo và bảo dưỡng định kỳ vô cùng dễ dàng.
+                                                            </li>                                                             
+                                                            <li class="flex items-start"> 
+                                                                <span class="text-blue-500 mr-3 text-xl">✔</span> Phù hợp cho các ứng dụng có bước vít lớn, yêu cầu tốc độ tịnh tiến cao và chịu tải ổn định.
+                                                            </li>                                                             
+                                                        </ul>                                                         
+                                                    </div>                                                     
+                                                    <div class="pt-8 mt-8 border-t border-slate-800/60 flex items-center justify-between"> 
+                                                        <div class="text-xs text-gray-500 uppercase tracking-widest"> 
+                                                            Ứng dụng: <span class="text-gray-300 block font-sans text-base mt-1 normal-case font-medium">Hệ thống máy công nghiệp thông dụng, cơ cấu nâng hạ</span> 
+                                                        </div>                                                         
+                                                        <a href="https://www.engder.com/index.php/products/ball-screw-spline/tst/sfa" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-base font-semibold px-6 py-3 rounded-lg transition-colors flex items-center gap-2 shrink-0"> 
+                        Chi tiết <span class="text-sm">➔</span> </a> 
+                                                    </div>                                                     
+                                                </section>                                                 
+                                                <section class="product-card p-10 rounded-2xl flex flex-col justify-between border-blue-500/10 bg-slate-800/5"> 
+                                                    <div> 
+                                                        <div class="w-full h-72 bg-slate-800 rounded-xl overflow-hidden mb-8 border border-slate-700/50 relative group"> 
+                                                            <img src="https://www.engder.com/images/products/products-03-2-2.jpg" alt="End Cap Circulation Ballscrew" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"> 
+                                                            <span class="absolute top-6 left-6 bg-emerald-500 text-white font-mono text-base px-4 py-1.5 rounded-full font-bold">02</span> 
+                                                        </div>                                                         
+                                                        <h2 class="text-3xl font-bold text-white mb-3 tracking-tight"> 
+                        Vít Me Bi Tuần Hoàn Nắp Chặn Đầu </h2> 
+                                                        <p class="text-emerald-400 font-semibold uppercase tracking-wider text-sm mb-6">End Cap Circulation Ballscrew</p> 
+                                                        <ul class="space-y-4 text-gray-300 text-lg border-t border-slate-800/60 pt-6"> 
+                                                            <li class="flex items-start"> 
+                                                                <span class="text-emerald-500 mr-3 text-xl">✔</span> Bi chuyển động tuần hoàn chạy dọc bên trong đai ốc và đảo chiều thông qua hệ thống nắp chặn ở 2 đầu đai ốc.
+                                                            </li>                                                             
+                                                            <li class="flex items-start"> 
+                                                                <span class="text-emerald-500 mr-3 text-xl">✔</span> Thiết kế nhỏ gọn, giảm thiểu tiếng ồn tối đa khi chuyển động tốc độ cao, độ chính xác định vị cực kỳ nghiêm ngặt.
+                                                            </li>                                                             
+                                                        </ul>                                                         
+                                                    </div>                                                     
+                                                    <div class="pt-8 mt-8 border-t border-slate-800/60 flex items-center justify-between"> 
+                                                        <div class="text-xs text-gray-500 uppercase tracking-widest"> 
+                                                            Ứng dụng: <span class="text-gray-300 block font-sans text-base mt-1 normal-case font-medium">Máy gia công CNC tốc độ cao, cơ cấu robot đòi hỏi chính xác tuyệt đối</span> 
+                                                        </div>                                                         
+                                                        <a href="https://www.engder.com/index.php/products/ball-screw-spline/tst/sfe" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white text-base font-semibold px-6 py-3 rounded-lg transition-colors flex items-center gap-2 shrink-0"> 
+                        Chi tiết <span class="text-sm">➔</span> </a> 
+                                                    </div>                                                     
+                                                </section>                                                 
+                                            </main>                                             
+                                            <footer class="border-t border-slate-800 pt-6 flex justify-between text-sm text-gray-500"> 
+                                                <div>Nhà phân phối chính thức: <span class="text-gray-300 font-semibold">Công ty TNHH Công Nghiệp Kata Việt Nam</span>
+                                                </div>                                                 
+                                                <div class="font-mono text-gray-400">Website: katavn.com.vn | Hotline: 0974 926 726</div>                                                 
+                                            </footer>                                             
+                                        </div>
+                                        <!DOCTYPE html> 
+                                        <html lang="vi"> 
+                                            <head> 
+                                                <meta charset="UTF-8"> 
+                                                <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+                                                <title>Kata Việt Nam - Thank You</title>                                                 
+                                                <script src="https://cdn.tailwindcss.com"></script>                                                 
+                                                <style>
+        /* Khóa cứng độ phân giải 1920x1200 */
+        .slide-container {
+            width: 1920px;
+            height: 1200px;
+            max-width: 1920px;
+            max-height: 1200px;
+            overflow: hidden;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #070b19 0%, #0f172a 100%);
+        }
+        .contact-pill {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .contact-pill:hover {
+            border-color: #3b82f6;
+            background: rgba(59, 130, 246, 0.03);
+        }
+    </style>                                                 
+                                            </head>                                             
+                                            <body class="bg-gray-900 block m-0 p-0"> 
+                                                <div class="slide-container flex flex-col justify-between p-20 text-white relative mx-auto"> 
+                                                    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-[120px] pointer-events-none"></div>                                                     
+                                                    <header class="flex justify-between items-center opacity-40"> 
+                                                        <span class="text-sm tracking-widest uppercase font-semibold">Kata Vietnam Co., Ltd</span> 
+                                                        <span class="font-mono text-sm">06/END</span> 
+                                                    </header>                                                     
+                                                    <main class="text-center my-auto space-y-12 relative z-10"> 
+                                                        <div class="space-y-4"> 
+                                                            <h1 class="text-8xl font-black tracking-tight text-white uppercase"> 
+                    Xin Cảm Ơn! </h1> 
+                                                            <p class="text-2xl text-blue-400 font-medium tracking-wide uppercase"> 
+                    Trân trọng hợp tác cùng Quý khách hàng &amp; Đối tác </p> 
+                                                            <div class="w-24 h-1 bg-blue-500 mx-auto mt-6"></div>                                                             
+                                                        </div>                                                         
+                                                        <div class="max-w-4xl mx-auto grid grid-cols-2 gap-6 pt-8 text-left"> 
+                                                            <div class="contact-pill p-6 rounded-xl flex flex-col justify-between"> 
+                                                                <div> 
+                                                                    <span class="text-xs text-gray-500 uppercase tracking-widest block mb-1">Văn phòng giao dịch</span> 
+                                                                    <p class="text-lg text-gray-200 font-medium leading-relaxed">356 Ngô Gia Tự, P. Việt Hưng, TP. Hà Nội.</p> 
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                            <div class="contact-pill p-6 rounded-xl flex flex-col justify-between"> 
+                                                                <div> 
+                                                                    <span class="text-xs text-gray-500 uppercase tracking-widest block mb-1">Hotline tư vấn</span> 
+                                                                    <p class="text-2xl text-yellow-400 font-mono font-bold tracking-wide">0974 926 726</p> 
+                                                                    <p class="text-sm text-gray-400 font-mono mt-1">Tel: (024)36 750 587 | Fax: (024)36 547 823</p> 
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                            <div class="contact-pill p-6 rounded-xl flex flex-col justify-between"> 
+                                                                <div> 
+                                                                    <span class="text-xs text-gray-500 uppercase tracking-widest block mb-1">Hòm thư điện tử</span> 
+                                                                    <a href="mailto:katavietnam@gmail.com" class="text-xl text-blue-400 font-medium hover:underline block mt-1">katavietnam@gmail.com</a> 
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                            <div class="contact-pill p-6 rounded-xl flex flex-col justify-between"> 
+                                                                <div> 
+                                                                    <span class="text-xs text-gray-500 uppercase tracking-widest block mb-1">Hệ thống Website</span> 
+                                                                    <a href="http://katavn.com.vn" target="_blank" class="text-2xl text-blue-400 font-bold hover:underline tracking-wide block mt-1">katavn.com.vn</a> 
+                                                                </div>                                                                 
+                                                            </div>                                                             
+                                                        </div>                                                         
+                                                    </main>                                                     
+                                                    <footer class="border-t border-slate-900 pt-6 text-center text-sm text-gray-600 uppercase tracking-widest"> 
+                                                        Giải pháp toàn diện cho ngành cơ khí và tự động hóa
+</footer>                                                     
+                                                </div>                                                 
+                                            </body>                                             
+                                        </html>                                         
+                                    </body>                                     
+                                </html>                                 
+                            </body>                             
+                        </html>                         
+                    </body>                     
+                </html>
+                <!DOCTYPE html> 
+                <html lang="vi"> 
+                    <head> 
+                        <meta charset="UTF-8"> 
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+                        <title>Kata Việt Nam - Airich Pneumatic</title>                         
+                        <script src="https://cdn.tailwindcss.com"></script>                         
+                        <style>
+        /* Khóa cứng độ phân giải 1920x1200 */
+        .slide-container {
+            width: 1920px;
+            height: 1200px;
+            max-width: 1920px;
+            max-height: 1200px;
+            overflow: hidden;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0b1329 0%, #1c2541 100%);
+        }
+        .product-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            border-color: #3b82f6;
+            background: rgba(59, 130, 246, 0.04);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+    </style>                         
+                    </head>                     
+                    <body class="bg-gray-900 block m-0 p-0"> 
+</body>                     
+                </html>
+                <!DOCTYPE html> 
+                <html lang="vi"> 
+                    <head> 
+                        <meta charset="UTF-8"> 
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+                        <title>Kata Việt Nam - Airich Pneumatic</title>                         
+                        <script src="https://cdn.tailwindcss.com"></script>                         
+                        <style>
+        /* Khóa cứng độ phân giải 1920x1200 */
+        .slide-container {
+            width: 1920px;
+            height: 1200px;
+            max-width: 1920px;
+            max-height: 1200px;
+            overflow: hidden;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0b1329 0%, #1c2541 100%);
+        }
+        .product-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            border-color: #3b82f6;
+            background: rgba(59, 130, 246, 0.04);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+    </style>                         
+                    </head>                     
+                    <body class="bg-gray-900 block m-0 p-0"> 
+</body>                     
+                </html>
+                <!DOCTYPE html> 
+                <html lang="vi"> 
+                    <head> 
+                        <meta charset="UTF-8"> 
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+                        <title>Kata Việt Nam - Airich Pneumatic</title>                         
+                        <script src="https://cdn.tailwindcss.com"></script>                         
+                        <style>
+        /* Khóa cứng độ phân giải 1920x1200 */
+        .slide-container {
+            width: 1920px;
+            height: 1200px;
+            max-width: 1920px;
+            max-height: 1200px;
+            overflow: hidden;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0b1329 0%, #1c2541 100%);
+        }
+        .product-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            border-color: #3b82f6;
+            background: rgba(59, 130, 246, 0.04);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+    </style>                         
+                    </head>                     
+                    <body class="bg-gray-900 block m-0 p-0"> 
+</body>                     
+                </html>
+            </body>             
+        </html>
+    </body>
+</html>
